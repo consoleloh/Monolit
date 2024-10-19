@@ -1,0 +1,18 @@
+@at-root{
+    $component: ".section__posts";
+
+    #{$component}{
+        display: flex;
+        gap: 24px;
+
+        @include bp("sm", "down"){
+            flex-direction: column;
+        }
+        @include bp("sm", "up"){
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

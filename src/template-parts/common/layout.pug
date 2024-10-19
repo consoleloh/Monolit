@@ -1,0 +1,21 @@
+block settings
+    -
+        const settings = {
+            page: {
+                name: ''
+            }
+        };
+
+doctype html
+html(lang="ru")
+    head
+        include meta
+
+    body.page#top(class="page--" + settings.page.name)
+        include header
+
+        main._body
+            block body
+
+        include footer
+        include scripts

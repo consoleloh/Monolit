@@ -1,0 +1,43 @@
+header.header.page__header 
+    ._container.container 
+        ._inner
+            a._logo(href="index.html") 
+                img(src="img/logo.png" width="40" height="40" alt="Monolit" Монолит="Монолит") 
+
+            button._control.-menu.js-menu-open(type="button" aria-label="Открыть меню")
+                svg(width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    line(y1="1.5" x2="30" y2="1.5" stroke-width="3" stroke="#ffbe00")
+                    line(y1="11.5" x2="30" y2="11.5" stroke-width="3" stroke="#ffbe00")
+                    line(y1="22.5" x2="30" y2="22.5" stroke-width="3" stroke="#ffbe00")
+                
+        nav.nav._nav
+            button._control.-back.js-nav-back(type="button")
+                | Назад
+
+            ul._list
+                li._item.-container
+                    a(href="/")
+                        | Главная
+                        
+                    ul._list.-sub
+                        li._item
+                            a(href="glavnaya/dlya-menyu")
+                                | Для меню
+                                
+                li._item.-container
+                    a(href="novosti/")
+                        | Новости
+                    
+                    ul._list.-sub
+                        li._item.-container
+                            a(href="novosti/plita-paroc-rob-80t-20x1200x1800")
+                                | Плита Paroc ROB 80t 20х1200х1800
+                                
+                            ul._list.-sub
+                                li._item
+                                    a(href="novosti/plita-paroc-rob-80t-20x1200x1800/dlya-menyu")
+                                        | Для меню
+                                        
+                        li._item
+                            a(href="novosti/membrana-sintofoil-st-1.5-mm-seraya-2100x25000/")
+                                | Мембрана Sintofoil ST 1.5 мм серая 2100x25000

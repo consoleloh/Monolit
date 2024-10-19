@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".section__content";
+    #{$component}{
+        @include bp("sm", "up"){
+        } 
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--post{
+        #{$component}{
+            @include bp("lg", "up"){
+                flex: 1;
+            }
+        }
+    }
+}

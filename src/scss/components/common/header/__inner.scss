@@ -1,0 +1,15 @@
+@at-root{
+    $component: ".header__inner";
+
+    #{$component}{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        display: flex;
+        flex-direction: column;
+
+        @include bp("lg", "down"){
+            padding-top: 70px;
+        }
+    }
+}

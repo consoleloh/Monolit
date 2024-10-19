@@ -1,0 +1,13 @@
+@at-root{
+    $component: ".posts__item";
+
+    #{$component}{
+
+        @include bp("sm", "up"){
+            flex-basis: calc(100% / 2 - 12px);
+        }
+        @include bp("lg", "up"){
+            flex-basis: calc(100% / 3 - 16px);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@at-root{
+    $component: ".page__footer";
+
+    #{$component}{
+        padding: 15px 0;
+        font-size: 14px;
+        line-height: 1.5em;
+        color: get-color(white);
+        background-color: get-color(primary);
+
+        a{
+            color: get-color(secondary);
+        }
+
+        @include bp("lg", "down"){
+        }
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

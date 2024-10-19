@@ -1,0 +1,14 @@
+@at-root{
+    $component: ".header__logo";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+
+        img{
+            display: block;
+        }
+    }
+}

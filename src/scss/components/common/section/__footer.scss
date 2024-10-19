@@ -1,0 +1,30 @@
+@at-root{
+    $component: ".section__footer";
+
+    #{$component}{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+    .section--post{
+        #{$component}{
+            margin-top: 30px;
+
+            @include bp("lg", "up"){
+                flex-basis: 100%;
+            }
+
+            a{
+                font-weight: 700;
+                text-decoration-line: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-color: get-color(secondary);
+            }
+        }
+    }
+}

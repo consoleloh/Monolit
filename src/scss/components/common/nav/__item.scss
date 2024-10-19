@@ -1,0 +1,19 @@
+@at-root{
+    $component: ".nav__item";
+
+    #{$component}{
+        padding: 10px 25px 10px 0;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+
+        &--container{
+            background-image: url("data:image/svg+xml;utf8,<svg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.45098 0.716261C1.08701 0.39798 0.534286 0.435223 0.216087 0.79895C-0.101784 1.16292 -0.0646231 1.71565 0.299103 2.03385L6.54627 7.49983L0.298775 12.9661C-0.0652792 13.2843 -0.102112 13.8371 0.215759 14.2007C0.533958 14.5648 1.08668 14.6019 1.45074 14.2837L8.45062 8.15862C8.54455 8.07647 8.61983 7.97518 8.67141 7.86155C8.72298 7.74792 8.74967 7.62458 8.74967 7.49979C8.74967 7.375 8.72298 7.25166 8.67141 7.13803C8.61983 7.0244 8.54455 6.92311 8.45062 6.84096L1.45098 0.716261Z' fill='%23ffbe00'/></svg>");
+            background-position: center right;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@at-root{
+    $component: ".section__banner";
+
+    #{$component}{
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+
+    .section--post{
+        #{$component}{
+            max-width: auto;
+            height: auto;
+            
+            @include bp("sm", "up"){
+            }
+            @include bp("lg", "up"){
+                flex-basis: 300px;
+            }
+        }
+    }
+}

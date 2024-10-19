@@ -1,0 +1,14 @@
+@at-root{
+    $component: ".post__image";
+
+    #{$component}{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@at-root{
+    $component: &;
+
+    #{$component}{
+        box-shadow: 0 0 15px rgba(get-color(primary), 0.15);
+
+        @include bp("sm", "up"){
+            display: flex;
+            flex-direction: column;
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}

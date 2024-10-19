@@ -1,0 +1,17 @@
+@at-root{
+    $component: ".header__control";
+
+    #{$component}{
+        @include bp("sm", "up"){
+            display: none;
+        }
+        @include bp("lg", "up"){
+        }
+
+        &--menu{
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+}

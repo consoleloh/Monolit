@@ -1,0 +1,11 @@
+.section{
+	@import "section";
+	@import "_inner";
+	@import "_title";
+	@import "_content";
+	@import "_text";
+	@import "_banner";
+	@import "_footer";
+	
+	@import "_posts";
+}

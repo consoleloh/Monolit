@@ -1,0 +1,28 @@
+@at-root{
+    $component: ".nav__control";
+
+    #{$component}{
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        border: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1em;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:before{
+            content: "";
+            width: 9px;
+            height: 15px;
+            margin-right: 10px;
+            background-image: url("data:image/svg+xml;utf8,<svg width='9' height='15' viewBox='0 0 9 15' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7.54908 14.2837C7.91305 14.602 8.46578 14.5648 8.78397 14.2011C9.10185 13.8371 9.06468 13.2844 8.70096 12.9662L2.45379 7.50017L8.70129 2.03386C9.06534 1.71566 9.10217 1.16293 8.7843 0.799287C8.4661 0.435233 7.91338 0.398073 7.54932 0.716272L0.549439 6.84138C0.455509 6.92353 0.380231 7.02482 0.328655 7.13845C0.277078 7.25208 0.250396 7.37542 0.250396 7.50021C0.250396 7.625 0.277078 7.74834 0.328655 7.86197C0.380231 7.9756 0.455509 8.07689 0.549439 8.15904L7.54908 14.2837Z' fill='%23ffbe00'/></svg>");
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){}
+    }
+}

@@ -1,0 +1,46 @@
+@at-root{
+    $component: ".section__text";
+
+    #{$component}{
+        line-height: 1.35em;
+
+        @include bp("sm", "up"){}
+        @include bp("lg", "up"){
+        }
+
+        h2{
+            margin: 2em 0 1.2em;
+            font-size: 24px;
+        }
+
+        h3{
+            margin: 1.6em 0 1em;
+            font-size: 18px;
+        }
+
+        p{
+            margin: 1em 0;
+        }
+
+        a{
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: get-color(secondary);
+        }
+    }
+
+    .section--main-hero{
+        #{$component}{
+            @include bp("lg", "up"){
+                max-width: 900px;
+            }
+        }
+    }
+    .section--post{
+        #{$component}{
+            @include bp("lg", "up"){
+                flex: 1;
+            }
+        }
+    }
+}

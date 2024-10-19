@@ -1,0 +1,22 @@
+@at-root{
+    $component: ".post__date";
+
+    #{$component}{
+        position: absolute;
+        top: -24px;
+        right: 0;
+        padding: 5px 10px;
+        // margin: 4px 0 12px;
+        font-size: 14px;
+        line-height: 1em;
+        text-align: right;
+        // color: rgba(get-color(primary), 0.5);
+        color: #fff;
+        background-color: get-color(secondary);
+
+        @include bp("sm", "up"){
+        }
+        @include bp("lg", "up"){
+        }
+    }
+}
